@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #f4f4f4;
+    line-height: 1.8; 
+    color: #333; 
+    font-size: 16px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Стили для шапки */
+header {
+    background-color: #9e55c0;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+            top: 0;
+            z-index: 100;
+}
+
+header h1 {
+    font-size: 50px; 
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; 
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #e1ade8; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #c37be4;
+    transform: scale(1.1);
+}
+
+
+section {
+    padding: 40px 0;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+section:nth-child(odd) {
+    background-color: #f9f9f9;
+    margin-right: 0; 
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 600; 
+    letter-spacing: 1px; 
+    color: #e3bbe7; 
+    margin-bottom: 20px; 
+}
+
+h2 {
+    font-size: 36px; 
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 600; 
+    text-align: center; 
+    color: #ca91ee; 
+    margin-bottom: 20px; 
+    letter-spacing: 1px;
+h1 {
+    font-size: 48px; 
+    text-align: center; 
+}
+p {
+    font-size: 25px;
+    line-height: 1.9; 
+    margin-bottom: 20px; 
+    text-align: justify; 
+    color: #444; 
+}
+p2 {
+    font-size: 25px;
+    line-height: 1.9; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    color: #444; 
+}
+
+
+footer {
+    background-color: #e8aaf2;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar {
+    background: linear-gradient(45deg, #e6bfe9, #ca72de); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+footer a:hover {
+    color: #9e55c0;
+}
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.img-fluid:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+.col-md-4 {
+    background-color: #fff !important; /* Белый фон */
+    border-radius: 10px !important; /* Закругленные углы */
+    padding: 20px !important; /* Отступы внутри колонки */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; /* Тень вокруг колонки */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease !important; /* Анимация при наведении */
+    margin-bottom: 20px !important; /* Отступ снизу */
+}
+
+/* Эффекты при наведении на колонки */
+.col-md-4:hover {
+    transform: translateY(-5px) !important; /* Поднимание колонки при наведении */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2) !important; /* Усиленная тень при наведении */
+    background-color: #f9f9f9 !important; /* Изменение фона на светло-серый */
+}
+
+/* Цвет фона для заголовков внутри колонок */
+.col-md-4 .p-3 {
+    color: white !important;
+    font-size: 18px !important;
+    padding: 10px !important;
+    border-radius: 8px !important; /* Закругленные углы для фона текста */
+}
+
+/* Различные фоны для заголовков */
+.bg-info {
+    background-color: #e6b0fc !important; /* Голубой */
+}
+
+.bg-success {
+    background-color: #b675e4 !important; /* Зеленый */
+}
+
+.bg-warning {
+    background-color: #d699ef !important; /* Желтый */
+}
+
+
+.schedule-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.schedule-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.day-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.schedule-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-item strong {
+    color: #007bff;
+}
+
+/* Цвета для дней недели */
+.monday { background-color: #e3f2fd; }
+.tuesday { background-color: #f1f8e9; }
+.wednesday { background-color: #fff3e0; }
+.thursday { background-color: #fce4ec; }
+
+/* Подгонка изображений внутри колонок */
+.col-md-4 img {
+    max-width: 100% !important; /* Обеспечивает адаптивность изображения */
+    height: auto !important; /* Сохраняет пропорции изображения */
+    border-radius: 8px !important; /* Закругленные углы */
+    transition: transform 0.3s ease !important; /* Анимация для изображения */
+}
+
+/* Эффект увеличения изображения при наведении */
+.col-md-4 img:hover {
+    transform: scale(1.05) !important; /* Увеличение картинки при наведении */
+}
+.navbar {
+    background: linear-gradient(45deg, #e6bfe9, #ca72de); /* Градиент */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Тень */ 
+} 
+}
